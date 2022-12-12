@@ -42,6 +42,16 @@ public class Main {
                     Area=3.14*radio*generatriz;
 
                     System.out.println("El area del cono es: "+Area);
+                case 4:
+                    System.out.println("Introduce el radio del cilindro");
+                    radio=sc.nextInt();
+                    System.out.println("Introduce la altura del cilindro");
+                    altura=sc.nextInt();
+
+                    Area= 2*radio*(radio*altura);
+
+                    System.out.println("El area del cilindro es: "+Area);
+
 
 
 
