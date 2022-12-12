@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int opcion,base,altura,area,radio;
+        int opcion,base,altura,area,radio,generatriz;
         double Area;
     Scanner sc=new Scanner(System.in);
 
@@ -32,7 +32,18 @@ public class Main {
                     radio=sc.nextInt();
 
                     Area=3.14*(radio*radio);
-                    System.out.println("El area del triangulo es: "+Area);
+                    System.out.println("El area del circulo es: "+Area);
+                case 3:
+                    System.out.println("Introduce el radio del cono");
+                    radio=sc.nextInt();
+                    System.out.println("Introduce la generatriz del cono");
+                    generatriz=sc.nextInt();
+
+                    Area=3.14*radio*generatriz;
+
+                    System.out.println("El area del cono es: "+Area);
+
+
 
             }
 
