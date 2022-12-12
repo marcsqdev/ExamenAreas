@@ -2,13 +2,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int opcion,base,altura,area,radio,generatriz;
-        double Area;
+        double Area,volumen;
     Scanner sc=new Scanner(System.in);
 
         System.out.println("1. Area del triangulo");
-        System.out.println("1. Area del circulo");
-        System.out.println("1. Area del cono");
-        System.out.println("1. Area del cilindro");
+        System.out.println("2. Area del circulo");
+        System.out.println("3. Area del cono");
+        System.out.println("4. Area del cilindro");
+        System.out.println("5. Volumen de la esfera");
 
         System.out.println("Escoge una opcion");
         opcion=sc.nextInt();
@@ -51,6 +52,17 @@ public class Main {
                     Area= 2*radio*(radio*altura);
 
                     System.out.println("El area del cilindro es: "+Area);
+                case 5:
+                    System.out.println("Introduce el radio de la esfera");
+                    radio=sc.nextInt();
+
+                    volumen=(4/3)*3.14*radio;
+
+                    System.out.println("El volumen de la esfera es: "+volumen);
+
+
+
+
 
 
 
