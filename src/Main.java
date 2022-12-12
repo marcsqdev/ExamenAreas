@@ -4,7 +4,7 @@ public class Main {
         int opcion,base,altura,area,radio,generatriz;
         double Area,volumen;
     Scanner sc=new Scanner(System.in);
-
+    do{
         System.out.println("1. Area del triangulo");
         System.out.println("2. Area del circulo");
         System.out.println("3. Area del cono");
@@ -59,6 +59,8 @@ public class Main {
                     volumen=(4/3)*3.14*radio;
 
                     System.out.println("El volumen de la esfera es: "+volumen);
+                case 6:
+                    System.out.println("Fin del programa");
 
 
 
@@ -71,5 +73,8 @@ public class Main {
 
         }else
             System.out.println("La opcion introducida no corresponde con ninguna de las opciones");
+    }while (opcion<4);
+
+
     }
 }
